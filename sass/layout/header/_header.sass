@@ -1,0 +1,53 @@
+.header
+    padding: 20px 0 15px
+    background: #FFF
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.15)
+
+    .container
+        display: flex
+        flex-flow: row wrap
+        justify-content: space-between
+        align-items: center
+
+    &__menu *
+        color: $base-black
+        font-size: 16px
+
+    .logo img
+        max-width: 139px
+
+    &__links
+        display: flex
+        flex-flow: row wrap
+        gap: 10px
+
+    &__link
+        position: relative
+
+        a
+            text-decoration: none
+            color: $base-black
+
+        &_circle
+            width: 25px
+            height: 25px
+            background: $base-green
+            border-radius: 50%
+            display: flex
+            align-items: center
+            justify-content: center
+
+            a
+                position: absolute
+                width: 100%
+                height: 100%
+                top: 0
+                left: 0
+
+        &_tel
+            color: $base-black
+            font-size: 18px
+            font-weight: 600
+    .hamburger
+        svg
+            cursor: pointer
