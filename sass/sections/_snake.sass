@@ -1,0 +1,28 @@
+.snake
+    .container
+        display: flex
+        flex-direction: column
+        gap: 80px
+
+    .snake__items
+        margin-top: 30px
+
+    &__items
+        display: flex
+        flex-flow: row nowrap
+        align-items: center
+        justify-content: center
+        gap: 30px
+
+    &__item
+        display: flex
+        flex-flow: column wrap
+        gap: 20px
+        color: $base-black
+        font-size: 20px
+
+        img
+            width: 367px
+            height: 215px
+            border-radius: 10px
+            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25)
