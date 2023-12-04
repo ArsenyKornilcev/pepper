@@ -4,7 +4,6 @@
 @import ./layout/_layout
 @import ./sections/_sections
 
-
 *
     box-sizing: border-box
     font-family: Manrope
@@ -28,3 +27,21 @@
 
 span.blue
     color: $base-blue
+
+body
+    overflow-x: hidden
+
+body.shadow
+    overflow: hidden
+    position: relative
+
+    &::after
+        position: absolute
+        content: ''
+        display: block
+        top: 0
+        left: 0
+        width: 100vw
+        height: 100vh
+        background: rgba(0, 0, 0, 0.10)
+        transition: .3s ease
