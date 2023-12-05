@@ -1,5 +1,5 @@
 input
-    &[type="radio"]
+    &[type="radio"], &[type='checkbox']
         display: none
 
         & + label
@@ -13,27 +13,20 @@ input
                 display: block
                 width: 15px
                 height: 15px
+                background-repeat: no-repeat
+                background-size: contain
+
+
+    &[type="radio"]
+        & + label::before
                 background-image: url(../img/icons/radio_unchecked.svg)
 
         &:checked + label::before
             background-image: url(../img/icons/radio_checked.svg)
 
     &[type='checkbox']
-        display: none
-
-        & + label
-            display: inline-flex
-            align-items: center
-            user-select: none
-            gap: 10px
-
-            &::before
-                content: ''
-                display: block
-                width: 15px
-                height: 15px
+        & + label::before
                 background-image: url(../img/icons/checkbox_unchecked.svg)
-                z-index: 16
 
         &:checked + label::before
             background-image: url(../img/icons/checkbox_checked.svg)
