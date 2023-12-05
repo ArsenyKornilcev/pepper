@@ -11,7 +11,7 @@
     <title>Document</title>
 </head>
 
-<body>
+<body class="shadow">
     <div class="vertical-menu">
         <div class="content">
             <div class="close">
@@ -40,6 +40,7 @@
             </div>
         </div>
     </div>
+
     <div class="modal">
         <div class="modal__header">
             <div class="group">
@@ -55,14 +56,49 @@
             </div>
         </div>
         <div class="modal__progress">
+            <div style="width: 25%;"></div>
         </div>
         <div class="modal__body">
-            <div class="title">
+            <div class="modal__title">
                 Какая у вас сфера деятельности?
             </div>
-            <div class="group">
-                <input type="radio" id="radio1">
-                <label for="radio1">Услуги физ.лицам</label>
+            <div class="modal__content">
+                <div class="group">
+                    <input type="radio" id="radio1" name="option">
+                    <label for="radio1">Услуги физ.лицам</label>
+                </div>
+                <div class="group">
+                    <input type="radio" id="radio2" name="option">
+                    <label for="radio2">Услуги для бизнеса</label>
+                </div>
+                <div class="group">
+                    <input type="radio" id="radio3" name="option">
+                    <label for="radio3">Торговля</label>
+                </div>
+                <div class="group">
+                    <input type="radio" id="radio4" name="option">
+                    <label for="radio4">Аренда и лизинг</label>
+                </div>
+                <div class="group">
+                    <input type="radio" id="radio5" name="option">
+                    <label for="radio5">Производство</label>
+                </div>
+                <div class="group">
+                    <input type="radio" id="radio6" name="option">
+                    <label for="radio6">Финансы</label>
+                </div>
+                <div class="group">
+                    <input type="radio" id="radio7" name="option">
+                    <label for="radio7">IT, SaaS, телеком</label>
+                </div>
+                <div class="group">
+                    <input type="radio" id="radio8" name="option">
+                    <label for="radio8">Проектные работы</label>
+                </div>
+                <div class="group">
+                    <input type="radio" id="radio9" name="option">
+                    <label for="radio9">Другое</label>
+                </div>
             </div>
 
             <div class="btns">
@@ -71,9 +107,7 @@
                         <path d="M18.3334 11L3.66675 11M3.66675 11L9.16675 5.5M3.66675 11L9.16675 16.5" stroke="#2C2C2C"
                             stroke-width="1.875" stroke-linecap="round" stroke-linejoin="round" />
                     </svg>
-                    <span>
-                        Назад
-                    </span>
+                    <span>Назад</span>
                 </div>
                 <div class="btn btn_forward">
                     <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
