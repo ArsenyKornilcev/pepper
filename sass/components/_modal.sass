@@ -7,9 +7,11 @@
     background: #fff
     overflow: hidden
     border-radius: 15px
-    display: block
+    display: flex
+    flex-flow: column wrap
     width: 700px
     height: auto
+    min-height: 550px
 
     &__header
         background: #F9F9F9
@@ -39,6 +41,8 @@
         padding: 20px 35px 35px
         display: flex
         flex-flow: column nowrap
+        justify-content: space-between
+        flex-grow: 1
 
         .btns
             display: flex
@@ -51,11 +55,6 @@
         display: flex
         flex-flow: column nowrap
         gap: 15px
-
-        .group
-            display: flex
-            flex-flow: row nowrap
-            gap: 10px
 
     &__title
         color: $base-black
