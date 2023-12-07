@@ -1,7 +1,7 @@
 .modal
     position: absolute
     z-index: 15
-    display: flex
+    display: none
     align-items: center
     justify-content: center
     width: 100vw
@@ -18,7 +18,7 @@
         height: auto
         min-height: 550px
 
-    &.active &__container
+    &.active &__container, &.active
         display: flex
 
     &__header
