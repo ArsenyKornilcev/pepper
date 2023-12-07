@@ -59,3 +59,31 @@
     .vertical-menu
         width: max-content
         padding-right: 130px
+
+@media (max-width: 425px)
+    .vertical-menu
+        height: fit-content
+        width: 100vw
+        .close
+            display: none
+            
+        &__menu
+            gap: 10px
+        ul
+            gap: 10px
+
+            *
+                font-size: 16px
+@media (max-width: 320px)
+    .vertical-menu
+        padding-left: 20px
+        padding-top: 15px
+        padding-bottom: 12px
+
+        &__menu
+            gap: 5px
+        ul
+            gap: 5px
+
+            *
+                font-size: 14px
