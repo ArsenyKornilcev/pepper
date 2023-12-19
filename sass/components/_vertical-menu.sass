@@ -50,6 +50,8 @@
             padding: 0
             margin: 0
             list-style: none
+            &:nth-child(1)
+                display: none
 
             a
                 color: $base-black
@@ -62,25 +64,15 @@
 
 @media (max-width: 425px)
     .vertical-menu
+        padding: 12px 20px
         height: fit-content
         width: 100vw
+        top: 100px
         .close
             display: none
 
         &__menu
             gap: 0
-            ul
-                gap: 10px
-        *
-            font-size: 16px
-@media (max-width: 320px)
-    .vertical-menu
-        padding-left: 20px
-        padding-top: 15px
-        padding-bottom: 12px
-        top: 100px
-
-        &__menu
             .section__title_decorated
                 display: flex
                 flex-flow: column-reverse wrap
@@ -89,6 +81,15 @@
                 &::after
                     width: 167px
                     height: 1px
+            ul
+                gap: 10px
+                &:nth-child(1)
+                    display: flex
+        *
+            font-size: 16px
+@media (max-width: 320px)
+    .vertical-menu
+        &__menu
             ul
                 gap: 5px
         *
