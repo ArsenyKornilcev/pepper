@@ -66,24 +66,30 @@
         width: 100vw
         .close
             display: none
-            
-        &__menu
-            gap: 10px
-        ul
-            gap: 10px
 
-            *
-                font-size: 16px
+        &__menu
+            gap: 0
+            ul
+                gap: 10px
+        *
+            font-size: 16px
 @media (max-width: 320px)
     .vertical-menu
         padding-left: 20px
         padding-top: 15px
         padding-bottom: 12px
+        top: 100px
 
         &__menu
-            gap: 5px
-        ul
-            gap: 5px
-
-            *
-                font-size: 14px
+            .section__title_decorated
+                display: flex
+                flex-flow: column-reverse wrap
+                gap: 10px
+                margin: 10px 0 5px
+                &::after
+                    width: 167px
+                    height: 1px
+            ul
+                gap: 5px
+        *
+            font-size: 14px
