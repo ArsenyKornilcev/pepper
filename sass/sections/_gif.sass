@@ -1,5 +1,5 @@
 .gif
-    .row
+    .group
         gap: 30px
         align-items: center
 
@@ -24,3 +24,14 @@
 
         svg
             width: 30px
+
+@media (max-width: 1200px)
+    .gif
+        &:nth-child(2)
+            .group
+                flex-direction: column-reverse
+        .group
+            flex-direction: column
+        .column
+            &_text
+                max-width: 96vw
