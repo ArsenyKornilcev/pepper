@@ -27,11 +27,13 @@
 
 @media (max-width: 1200px)
     .gif
-        &:nth-child(2)
-            .group
-                flex-direction: column-reverse
         .group
             flex-direction: column
+        &.img-first
+            .group
+                flex-direction: column-reverse
         .column
             &_text
-                max-width: 96vw
+                padding: 0 2vw
+                max-width: none
+                align-self: flex-start
