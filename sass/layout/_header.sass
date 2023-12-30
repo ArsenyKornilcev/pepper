@@ -16,6 +16,7 @@
     &__links
         display: flex
         flex-flow: row wrap
+        align-items: center
         gap: 10px
 
     &__link
@@ -51,3 +52,26 @@
             flex-grow: 1
             .menu
                 display: none
+
+    @media (max-width: 550px)
+        .container
+            gap: 15px
+
+    @media (max-width: 460px)
+        .logo
+            order: 1
+        &__menu
+            order: 2
+            min-width: 20px
+        .hamburger
+            order: 3
+            align-self: flex-start
+        &__links
+            order: 4
+
+    @media (max-width: 320px)
+        .container
+            gap: 10px
+        &__link_tel
+            a
+                font-size: 16px
