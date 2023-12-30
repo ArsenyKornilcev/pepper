@@ -8,6 +8,7 @@
         flex-flow: row wrap
         justify-content: space-between
         align-items: center
+        gap: 45px
 
     .logo img
         max-width: 139px
@@ -44,3 +45,9 @@
             color: $base-black
             font-size: 18px
             font-weight: 600
+
+    @media (max-width: 1200px)
+        &__menu
+            flex-grow: 1
+            .menu
+                display: none
