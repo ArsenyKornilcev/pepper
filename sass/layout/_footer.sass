@@ -7,3 +7,37 @@
         flex-flow: row nowrap
         justify-content: space-between
         align-items: center
+        gap: 40px
+    .logo
+        img
+            min-width: 175px
+
+@media (max-width: 900px)
+    .footer
+        .menu
+            max-width: 400px
+            justify-content: flex-end
+
+@media (max-width: 550px)
+    .footer
+        padding: 0
+        .container
+            flex-flow: column wrap
+            gap: 15px
+            padding: 20px
+            .menu
+                max-width: none
+                gap: 10px
+                justify-content: flex-start
+
+            .logo
+                align-self: flex-start
+                img
+                    min-width: 0
+                    max-width: 140px
+
+@media (max-width: 320px)
+    .footer
+        .menu
+            a
+                font-size: 14px
