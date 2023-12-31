@@ -1,5 +1,5 @@
 .hero
-    background-image: url(../img/hero/bg1.png)
+    background-image: url(../img/hero/hero__bg.png)
     background-repeat: no-repeat
     background-size: cover
     background-position: center
@@ -44,4 +44,66 @@
             grid-template-columns: 1fr
             max-width: 350px
 
-    // @media (max-width: 800px)
+@media (max-width: 800px)
+    .hero
+        background-position: -828px 150px
+
+        .btn
+            align-self: center
+
+        &__items
+            margin: 470px auto 0
+            grid-template-columns: 1fr 1fr
+            max-width: none
+
+        .section
+            &__title, &__description
+                max-width: none
+
+@media (max-width: 690px)
+    .hero
+        background-position: -869px 218px
+
+        .section
+            &__title
+                max-width: 380px
+            &__description
+                max-width: 370px
+
+@media (max-width: 620px)
+    .hero
+        background-position: -913px 218px
+
+@media (max-width: 425px)
+    .hero
+        padding: 30px 0 23px
+        background-image: url(../img/hero/hero__bg_mobile.png)
+        background-size: cover
+        background-position: center -140px
+
+        .container
+            padding: 0 20px
+
+        .bread-cramps
+            display: none
+
+        .section
+            &__title
+                font-size: 18px
+                text-transform: none
+            &__description
+                font-size: 15px
+
+        &__items
+            margin-top: 360px
+            gap: 10px 16px
+        &__item
+            svg
+                min-width: 15px
+                max-width: 15px
+            div
+                font-size: 11px
+
+        .btn
+            font-size: 14px
+            margin-top: 0
