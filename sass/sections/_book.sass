@@ -11,7 +11,6 @@
 
     img
         width: 443px
-        height: 488px
 
     .section__description
         display: flex
@@ -20,3 +19,29 @@
 
         p
             margin: 0
+
+@media (max-width: 1200px)
+    .book
+        background-size: initial
+
+@media (max-width: 890px)
+    .book
+        img
+            max-width: 300px
+
+@media (max-width: 768px)
+    .book
+        img
+            display: block
+            margin: 0 auto
+            max-width: 100%
+        .group
+            flex-flow: column-reverse nowrap
+
+@media (max-width: 425px)
+    .book
+        background-image: url(../img/book/book__bg_mobile.png)
+        background-size: cover
+
+        .section__description
+            gap: 10px
