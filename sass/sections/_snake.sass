@@ -23,7 +23,7 @@
 
         img
             width: 367px
-            height: 215px
+            aspect-ratio: 367 / 215
             border-radius: 10px
             box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25)
 
@@ -96,3 +96,15 @@
                 font-size: 20px
                 font-weight: 600
                 margin-bottom: 10px
+
+@media (max-width: 1024px)
+    .snake
+        &__items
+            gap: 3vw
+        &__item
+            gap: 10px
+
+@media (max-width: 900px)
+    .snake
+        &__item
+            font-size: 14px
