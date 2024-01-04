@@ -23,16 +23,32 @@
         gap: 15px
 
         svg
-            width: 30px
+            min-width: 30px
 
 @media (max-width: 1200px)
     .gif
         .group
             flex-direction: column
-        &.img-first
+        &_img-first
             .group
                 flex-direction: column-reverse
         .column
             &_text
                 max-width: none
                 align-self: flex-start
+
+@media (max-width: 425px)
+    .gif
+        &__item
+            svg
+                min-width: 23px
+                max-width: 23px
+        &_1
+            padding: 18px 0 17px
+        &_2
+            padding: 40px 0
+        &_3
+            padding: 24px 0 25px
+            
+        .group
+            gap: 20px
