@@ -108,3 +108,18 @@
     .snake
         &__item
             font-size: 14px
+
+@media (max-width: 768px)
+    .snake
+        &__items
+            flex-flow: row wrap
+        &__item
+            max-width: 320px
+
+@media (max-width: 690px)
+    .snake
+        &__items
+            gap: 30px
+        &__item
+            max-width: none
+            font-size: 18px
