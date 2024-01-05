@@ -83,7 +83,7 @@
                 justify-content: center
             &__card
                 width: 366px
-    
+
     @media (max-width: 425px)
         .prices
             &__cards
@@ -102,7 +102,7 @@
 
                     .btn
                         font-size: 14px
-                    
+
                     .price
                         margin: 10px 0
                         font-size: 18px
@@ -118,12 +118,15 @@
         .section__title
             max-width: 394px
 
-        >div
-            background-image: url(../img/contact/bell__bg.png)
+        .container
+            background-image: url(../img/form/bell__bg.png)
             background-repeat: no-repeat
             background-size: cover
+            background-color: #E7F8FD
+            border-radius: 15px
             position: relative
             padding: 38px 66px
+            overflow: hidden
 
             img
                 position: absolute
@@ -147,6 +150,38 @@
                 padding: 16px 32px
                 resize: none
                 height: 128px
+
+        @media (max-width: 1160px)
+            .container
+                border-radius: 0
+                img
+                    right: 1vw
+
+        @media (max-width: 1024px)
+            .container
+                img
+                    right: -3vw
+
+        @media (max-width: 970px)
+            .container
+                img
+                    width: 30vw
+                    right: 0
+        
+        
+
+        @media (max-width: 425px)
+            .container
+                background-image: url(../img/form/bell__bg_mobile.png)
+                display: flex
+                flex-flow: column wrap
+                align-items: center
+
+                img
+                    position: relative
+                    right: unset
+                    top: unset
+                    transform: translate(0)
 
 @media (max-width: 425px)
     .contact_and_prices
