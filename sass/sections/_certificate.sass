@@ -1,9 +1,38 @@
 .certificate
     .group
         justify-content: space-between
+        gap: 30px
 
     .section__description
         max-width: 466px
 
     .column_text
         justify-content: space-between
+
+    @media (max-width: 768px)
+        .group
+            flex-flow: row wrap
+
+        .column
+            margin: 0 auto
+
+        .section__description
+            max-width: none
+
+        .column_text
+            margin: 0
+            position: relative
+
+            .decor
+                position: absolute
+                width: 185px
+                transform: rotate(154.944deg)
+                top: -19px
+                right: -59px
+
+@media (max-width: 425px)
+    .certificate
+        padding: 40px 0
+        .column_text
+            .decor
+                width: 111px
