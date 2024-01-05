@@ -167,21 +167,69 @@
                 img
                     width: 30vw
                     right: 0
-        
-        
 
-        @media (max-width: 425px)
+        @media (max-width: 900px)
+            &__form
+                max-width: none
             .container
-                background-image: url(../img/form/bell__bg_mobile.png)
+                img
+                    top: 70px
+                    width: 160px
+
+        @media (max-width: 660px)
+            &__form
+                max-width: none
+                display: flex
+                flex-flow: column wrap
+
+                .btn
+                    align-self: center
+
+            .container
+                img
+                    top: 70px
+                    width: 160px
+
+        @media (max-width: 600px)
+            .section__title
+                align-self: flex-start
+            &__form
+                width: 100%
+            .container
                 display: flex
                 flex-flow: column wrap
                 align-items: center
+                background-image: url(../img/form/bell__bg_mobile.png)
+                background-position: center
 
                 img
                     position: relative
                     right: unset
                     top: unset
                     transform: translate(0)
+                    width: 354px
+
+        @media (max-width: 425px)
+            &__form
+                gap: 15px
+                margin-top: 20px
+                
+                input, textarea
+                    padding: 12px
+
+                .btn
+                    margin-top: 7px
+
+            .container
+                padding: 13px 20px 16px
+
+        @media (max-width: 320px)
+            &__form
+                gap: 13px
+                .btn
+                    font-size: 10px
+                    margin-top: 5px
+
 
 @media (max-width: 425px)
     .contact_and_prices
