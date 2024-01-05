@@ -61,6 +61,29 @@
                     font-size: 16px
                     align-self: center
 
+    @media (max-width: 1220px)
+        .prices
+            .card
+                &__header
+                    .title
+                        font-size: 18px
+                    .subtitle
+                        font-size: 16px
+
+                &__body
+                    font-size: 18px
+                    .price
+                        font-size: 22px
+
+    @media (max-width: 1024px)
+        .prices
+            &__cards
+                display: flex
+                flex-flow: row wrap
+                justify-content: center
+            &__card
+                width: 367px
+
     .contact
         .section__title
             max-width: 394px
