@@ -1,12 +1,24 @@
 .snake
+    &__bg
+        position: absolute
+        z-index: 2
+        width: 60vw
+        height: 585px
+        top: 13px
+        left: 18px
+        img
+            display: block
+
+    &__container
+        position: relative
+
     &__stages
+        position: relative
+        z-index: 3
         display: flex
         flex-flow: column wrap
         width: 100%
         margin-top: 40px
-        background-image: url(../img/stages/snake.svg)
-        background-repeat: no-repeat
-        background-position: 20px 10px
 
         .group
             position: relative
@@ -20,7 +32,7 @@
         &:nth-child(2n)
             align-self: end
         &:nth-child(2)
-            margin-top: 20px
+            margin-top: 33px
             span
                 background: #5CD582
         &:nth-child(3)
@@ -31,7 +43,7 @@
                 top: -14px
                 left: 11px
         &:nth-child(4)
-            margin-top: 73px
+            margin-top: 79px
             span
                 background: #99E831
 
@@ -62,6 +74,7 @@
     &__row
         display: flex
         flex-flow: row nowrap
+        margin-top: 29px
 
         span
             background: #BAF206
