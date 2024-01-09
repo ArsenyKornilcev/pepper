@@ -23,7 +23,6 @@
         .group
             position: relative
             flex-flow: column nowrap
-            margin-top: 13px
 
     &__stage
         display: flex
@@ -36,7 +35,7 @@
             span
                 background: #5CD582
         &:nth-child(3)
-            margin-top: 55px
+            margin-top: 80px
             span
                 background: #5CD582
             img
@@ -74,7 +73,7 @@
     &__row
         display: flex
         flex-flow: row nowrap
-        margin-top: 29px
+        margin-top: 51px
 
         span
             background: #BAF206
@@ -84,3 +83,29 @@
             margin-left: 69px
             height: min-content
             align-self: end
+
+    @media (max-width: 1200px)
+        &__stage
+            &:nth-child(2n)
+                margin-left: 580px
+            img
+                display: none
+
+    @media (max-width: 1144px)
+        &__row
+            margin-top: 10px
+
+    @media (max-width: 1096px)
+        &__stage
+            &:nth-child(4)
+                margin-top: 39px
+
+        &__row
+            margin-top: 10px
+
+    @media (max-width: 1050px)
+        &__stage
+            &:nth-child(3)
+                margin-top: 40px
+            &:nth-child(4)
+                margin-top: 56px
