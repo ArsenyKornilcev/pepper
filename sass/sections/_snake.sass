@@ -185,3 +185,55 @@
 
         &__row
             margin-top: 16px
+
+    @media (max-width: 370px)
+        &__bg
+            svg
+                height: 193vw
+
+        &__stages
+            gap: 15vw
+
+        &__stage
+            &:nth-child(3)
+                margin-top: 10px
+
+            >div
+                .title
+                    font-size: 14px
+                    margin-bottom: 8px
+                .description
+                    font-size: 12px
+
+        &__row
+            margin-top: 0
+
+    @media (max-width: 355px)
+        &__stages
+            gap: 13vw
+        &__stage
+            &:nth-child(3)
+                margin: 0
+            &:nth-child(4)
+                margin-top: 1vw
+
+    @media (max-width: 340px)
+        &__stage
+            &:nth-child(4)
+                margin-top: 0
+        &__stages
+            gap: 12vw
+
+    @media (max-width: 330px)
+        &__stages
+            gap: 10.5vw
+
+        &__row
+            margin-top: 4vw
+
+    @media (max-width: 330px)
+        &__stages
+            gap: 10vw
+
+        &__row
+            margin-top: 0
