@@ -169,11 +169,29 @@
             &:nth-child(4)
                 margin-top: 3vw
             >div
+                .title
+                    font-size: 19px
                 .description
                     font-size: 15px
 
         &__row
             margin-top: 2vw
+
+    @media (max-width: 940px)
+        &__row
+            margin-top: 0
+
+    @media (max-width: 930px)
+        &__stage
+            >div
+                .title
+                    font-size: 18px
+                .description
+                    font-size: 14px
+            &:nth-child(2)
+                margin-top: 5vw
+            &:nth-child(4)
+                margin-top: 5vw
 
 
     @media (max-width: 425px)
