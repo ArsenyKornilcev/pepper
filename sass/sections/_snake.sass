@@ -148,8 +148,33 @@
     @media (max-width: 985px)
         &__row
             margin-top: 0
+        &__stage
+            &:nth-child(4)
+                margin-top: 2vw
 
-        
+    @media (max-width: 956px)
+        &__stage
+            >div
+                .title
+                    margin-bottom: 8px
+            &:nth-child(2), &:nth-child(4)
+                margin-top: 0
+        &__row
+            margin-top: 0
+
+    @media (max-width: 945px)
+        &__stage
+            &:nth-child(2)
+                margin-top: 3vw
+            &:nth-child(4)
+                margin-top: 3vw
+            >div
+                .description
+                    font-size: 15px
+
+        &__row
+            margin-top: 2vw
+
 
     @media (max-width: 425px)
         &__stages
