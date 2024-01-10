@@ -3,6 +3,14 @@
     background: #FFF
     box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.15)
 
+    #close, #hamburger
+        transition: .3s ease opacity
+        overflow: hidden
+
+    #close
+        opacity: 0
+        max-width: 0
+
     .container
         display: flex
         flex-flow: row wrap
@@ -75,3 +83,18 @@
         &__link_tel
             a
                 font-size: 16px
+
+@media (max-width: 425px)
+    .header
+        position: relative
+        z-index: 12
+
+    .shadow
+        .header
+            box-shadow: none
+            #close
+                opacity: 1
+                max-width: none
+            #hamburger
+                opacity: 0
+                max-width: 0

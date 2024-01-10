@@ -5,8 +5,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const closeBtn_el = document.querySelector('.vertical-menu .close')
 
 	hamburger_el.addEventListener("click", () => {
-		body_el.classList.add("shadow");
-		verticalMenu_el.classList.add("active");
+		body_el.classList.toggle("shadow");
+		verticalMenu_el.classList.toggle("active");
 	});
 
     closeBtn_el.addEventListener('click', () => {
