@@ -225,7 +225,31 @@
             >div
                 .title
                     margin-bottom: 6px
-    
+
+    @media (max-width: 795px)
+        &__stage
+            gap: 10px
+
+            >div
+                .title
+                    margin-bottom: 5px
+
+    @media (max-width: 788px)
+        &__stage
+            img
+                display: none
+            &:nth-child(1), &:nth-child(3)
+                max-width: 60%
+            &:nth-child(3)
+                margin-top: 2vw
+            &:nth-child(2)
+                margin-top: 1vw
+            >div
+                max-width: none
+
+        &__row
+            .snake__stage
+                max-width: 50%
 
     @media (max-width: 425px)
         &__stages
@@ -281,7 +305,6 @@
                 margin: 0
                 align-self: center
                 font-size: 14px
-                padding: 10px 30px
 
     @media (max-width: 375px)
         &__stage
